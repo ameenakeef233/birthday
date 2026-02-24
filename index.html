@@ -109,7 +109,7 @@
             }
 
             const { data, error } = await supabase
-                .from("Fana") // tukar ikut table Supabase kau
+                .from("submissions") // tukar ikut table Supabase kau
                 .insert([{ name, phone, warna }])
 
             if (error) {
