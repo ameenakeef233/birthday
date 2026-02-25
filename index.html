@@ -102,13 +102,8 @@
             const phone = document.getElementById("phone").value
             const warna = document.getElementById("warna").value
 
-<<<<<<< HEAD
             const { error } = await supabase
                 .from("submissions")
-=======
-            const { data, error } = await supabase
-                .from("submissions") // tukar ikut table Supabase kau
->>>>>>> 8c7e971cd91cf74344e50926409a81fede66f89d
                 .insert([{ name, phone, warna }])
 
             if (error) {
