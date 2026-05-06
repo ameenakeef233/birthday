@@ -4,115 +4,1727 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback Form</title>
+    <title>Happy Birthday 🎉</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700&family=Poppins:wght@300;500&display=swap"
+        rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500&display=swap');
+
         body {
-            font-family: 'Arial', sans-serif;
-            background: #f4f6f8;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-        }
-
-        .container {
-            background: white;
-            padding: 30px 40px;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 400px;
-        }
-
-        h2 {
-            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff7ea3, #fff0f7);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
             color: #333;
         }
 
-        input,
-        textarea {
-            width: 100%;
-            padding: 10px 12px;
-            margin: 10px 0;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            font-size: 16px;
-        }
 
-        textarea {
-            resize: vertical;
-            min-height: 80px;
-        }
 
-        button {
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 6px;
-            background: #4f46e5;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
 
-        button:hover {
-            background: #3730a3;
-        }
 
-        #status {
+
+
+
+        /* ================= SECTION 5 ================= */
+        .section5 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 150px 20px !important;
+            /* Tambah padding supaya bernafas */
+            min-height: 500px;
+            background: url('asset/Happy Birthday.png');
+
+            /* background: url('asset/dark background with pink aura heart.jpg'); */
+            /* background: url('asset/canva.png'); */
+
+            background-size: cover;
+            /* pastikan full cover */
+            background-position: center;
+            /* tengahkan */
+            background-repeat: no-repeat;
+            /* jangan repeat */
             text-align: center;
-            margin-top: 12px;
+            position: relative;
+        }
+
+        .section5::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            /* background: rgba(0, 0, 0, 0.25); */
+        }
+
+        .video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* crop/scale nicely */
+            z-index: 1;
+        }
+
+        /* .section5-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+        } */
+        .section5-content {
+            position: relative;
+            z-index: 2;
+            /* on top of video */
+            color: white;
+            text-align: center;
+        }
+
+        .section5 h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 45px;
+            color: white;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .section5 p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            color: white;
+            line-height: 1.7;
+        }
+
+
+
+
+
+
+
+
+
+        /* ================= SECTION 1 ================= */
+        .section1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            padding: 100px;
+            /* background: linear-gradient(135deg, #ffe6f0, #ffcce6); */
+            background: url('asset/canva.png');
+
+            background-size: cover;
+            /* pastikan full cover */
+            background-position: center;
+            /* tengahkan */
+            background-repeat: no-repeat;
+            /* jangan repeat */
+            /* soft pink */
+        }
+
+        .section1 .text {
+            flex: 1;
+        }
+
+        .section1 h1 {
+            font-family: 'Pacifico', cursive;
+            color: #ff4081;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .section1 p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #ffefe8;
+        }
+
+        .section1 img {
+            flex: 1;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 30px;
+            opacity: 0;
+            /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); */
+        }
+
+        /* Responsive */
+        @media(max-width:900px) {
+            .section1 {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+
+
+
+
+
+
+
+        /* ================= SECTION 2 SLIDER ================= */
+        .section2 {
+            /* padding: 60px 0; */
+            overflow: hidden;
+            /* background: linear-gradient(135deg, #e6e6ff, #ccccff); */
+            background: url('asset/ChatGPT 1.png');
+            background-size: cover;
+            /* pastikan full cover */
+            background-position: center;
+            /* tengahkan */
+            background-repeat: no-repeat;
+            /* jangan repeat */
+            /* min-height: 500px; */
+            /* adjust ikut tinggi Section 1 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* center vertically */
+            align-items: center;
+            padding: 150px 20px !important;
+            /* Tambah padding supaya bernafas */
+            min-height: 500px;
+        }
+
+        .slider-wrapper {
+            width: 90%;
+            margin: auto;
+            overflow-x: scroll;
+            scrollbar-width: none;
+            border-radius: 25px;
+            /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); */
+            position: relative;
+            cursor: grab;
+
+        }
+
+        .slider-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+
+        .slider {
+            display: flex;
+            gap: 20px;
+            width: max-content;
+            /* penting untuk infinite loop */
+            animation: scroll 30s linear infinite;
+        }
+
+        .slider img {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+            flex-shrink: 0;
+            cursor: pointer;
+            transition: transform 0.4s;
+            border: 5px solid white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .slider img:hover {
+            transform: scale(1.08);
+        }
+
+        /* Auto scroll animation */
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Pause when hover */
+        .slider-wrapper:hover .slider {
+            animation-play-state: paused;
+        }
+
+
+
+
+
+
+
+
+
+
+        .section3 {
+            min-height: 500px;
+            /* adjust ikut tinggi Section 1 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* center vertically */
+            align-items: center;
+            padding: 100px 20px;
+            /* sama macam Section 1 */
+            background: url('asset/Intricate floral patterns in black and white.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        /* dark overlay */
+        .section3::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            /* adjust opacity sini */
+            z-index: 1;
+        }
+
+        /* content above overlay */
+        .section3>* {
+            position: relative;
+            z-index: 2;
+        }
+
+        .choose-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            margin-bottom: 50px;
+            color: #d63384;
+        }
+
+        .choose-grid {
+            display: flex;
+            flex-direction: row;
+            /* arrange horizontally */
+            gap: 20px;
+            /* jarak antara part */
+            max-width: 1000px;
+            /* boleh adjust ikut screen */
+            margin: auto;
+            align-items: stretch;
+            /* pastikan semua part tinggi sama */
+            /* display: grid; */
+            /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+            /* gap: 25px; */
+            /* width: 90%; */
+            /* max-width: 1100px; */
+        }
+
+        .choose-card {
+            flex: 1;
+            /* supaya 4 part sama lebar */
+            height: 500px;
+            /* tinggi sama macam Section 1 */
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* center content vertically */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card-img-box {
+            height: 120px;
+            /* fix height supaya semua sama */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .card-img-box img {
+            max-width: 110px;
+            max-height: 110px;
+            object-fit: contain;
+        }
+
+        .choose-card:nth-child(1) {
+            background: #ffe6f0;
+            /* soft pink */
+        }
+
+        .choose-card:nth-child(2) {
+            background: #e6e6ff;
+            /* soft lilac */
+        }
+
+        .choose-card:nth-child(3) {
+            background: #cceeff;
+            /* soft blue */
+        }
+
+        .choose-card:nth-child(4) {
+            background: #fff7cc;
+            /* soft yellow */
+        }
+
+        .choose-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .choose-card h3 {
+            margin-bottom: 15px;
+            font-size: 22px;
+            color: #ff4d88;
+        }
+
+        .choose-card p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .choose-card button {
+            padding: 10px 25px;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+            background: linear-gradient(45deg, #ff4081, #ff80ab, #ff4081);
+            text-transform: uppercase;
+            /* background-size: 200% auto;
+            transition: 0.5s;
+            letter-spacing: 1px;
+            font-weight: 600; */
+        }
+
+        .choose-card button:hover {
+            transform: scale(1.1);
+        }
+
+        /* 
+        .card-img {
+            width: 110px;
+            height: 90px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            align-self: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        } */
+
+        .popup {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            /* dark overlay */
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .popup-content {
+            position: relative;
+            width: min(92vw, 850px);
+            max-height: 85vh;
+            overflow-y: auto;
+            padding: 40px 35px;
+            border-radius: 28px;
+            text-align: left;
+            animation: pop 0.5s ease;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+            background:
+                linear-gradient(rgba(255, 245, 250, 0.94), rgba(255, 245, 250, 0.94)),
+                url('asset/download.jpg');
+            background-size: cover;
+            background-position: center;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            backdrop-filter: blur(8px);
+        }
+
+        #popup-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 17px;
+            line-height: 2;
+            color: #4a2c3a;
+            white-space: pre-line;
+            word-break: break-word;
+            padding-top: 10px;
+        }
+
+        #popup-text .letter-title {
+            display: block;
+            font-family: 'Playfair Display', serif;
+            font-size: 34px;
+            font-weight: 700;
+            color: #d63384;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        #popup-text .letter-sub {
+            display: block;
+            font-size: 15px;
+            color: #a14b6d;
+            text-align: center;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        #popup-text .letter-end {
+            display: block;
+            margin-top: 30px;
+            font-weight: 600;
+            color: #c2185b;
+            text-align: right;
+        }
+
+        .popup-content::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .popup-content::-webkit-scrollbar-track {
+            background: rgba(255, 192, 203, 0.15);
+            border-radius: 20px;
+        }
+
+        .popup-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #ff80ab, #ff4081);
+            border-radius: 20px;
+        }
+
+        .popup-contentterm {
+            position: relative;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 400px;
+            animation: pop 0.5s ease;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .close {
+            position: sticky;
+            top: 0;
+            float: right;
+            font-size: 28px;
+            cursor: pointer;
+            color: #d63384;
+            background: rgba(255, 255, 255, 0.8);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            z-index: 10;
+        }
+
+        @keyframes pop {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .popup-content {
+                width: 92vw;
+                max-height: 88vh;
+                padding: 28px 22px;
+                border-radius: 22px;
+            }
+
+            #popup-text {
+                font-size: 15px;
+                line-height: 1.9;
+            }
+
+            #popup-text .letter-title {
+                font-size: 26px;
+            }
+
+            #popup-text .letter-sub {
+                font-size: 14px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* ================= SECTION 4 FORM ================= */
+        .section4 {
+            padding: 80px;
+            background: linear-gradient(135deg, #fff7cc, #ffe699);
+            /* soft yellow / peach */
+        }
+
+        .form-box {
+            width: 90%;
+            max-width: 450px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .form-box h2 {
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            color: #ff4081;
+            margin-bottom: 25px;
+        }
+
+        .form-box input,
+        .form-box textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 15px;
+            border: 2px solid #ffc1d3;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .form-box input:focus,
+        .form-box textarea:focus {
+            border-color: #ff4081;
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 64, 129, 0.3);
+        }
+
+        .form-box button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+            background: linear-gradient(45deg, #ff4081, #ff80ab, #ff4081);
+            background-size: 200% auto;
+            transition: 0.5s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .form-box button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 64, 129, 0.4);
+            background-position: right center;
+            box-shadow: 0 10px 20px rgba(255, 64, 129, 0.3);
+        }
+
+
+
+
+        /* ================= ULTIMATE HERO ================= */
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background: radial-gradient(circle at top, #ff9ecf, #783e51, #8a2be2); */
+            background-image: url('asset/kucing.png');
+            /* <-- gambar awak */
+            background-size: cover;
+            /* pastikan full cover */
+            background-position: center;
+            /* tengahkan */
+            background-repeat: no-repeat;
+            /* jangan repeat */
+            overflow: hidden;
+            text-align: center;
+            will-change: transform, opacity;
+
+        }
+
+        /* Moving glowing blobs */
+        .glow-bg::before,
+        .glow-bg::after {
+            content: "";
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.6;
+            animation: floatBlob 10s infinite alternate ease-in-out;
+        }
+
+        .glow-bg::before {
+            background: #ffccff;
+            top: 10%;
+            left: 15%;
+        }
+
+        .glow-bg::after {
+            background: #ffd6ec;
+            bottom: 10%;
+            right: 15%;
+        }
+
+        @keyframes floatBlob {
+            from {
+                transform: translateY(0)
+            }
+
+            to {
+                transform: translateY(40px)
+            }
+        }
+
+        /* Premium animated gradient text */
+        .hero-title {
+            font-family: 'Great Vibes', cursive;
+            font-size: 5rem;
+            background: linear-gradient(90deg, #ffffff, #ffe6f5, #ffffff);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation:
+                fadeUp 2s ease forwards,
+                gradientMove 6s linear infinite,
+                glowPulse 3s ease-in-out infinite alternate;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        /* Subtitle */
+        .hero-sub {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            color: white;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+            animation-delay: 1.5s;
+        }
+
+        /* Animations */
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes gradientMove {
+            0% {
+                background-position: 0%
+            }
+
+            100% {
+                background-position: 200%
+            }
+        }
+
+        @keyframes glowPulse {
+            from {
+                text-shadow: 0 0 10px #fff5, 0 0 20px #ff99ff
+            }
+
+            to {
+                text-shadow: 0 0 25px #ffffff, 0 0 50px #ff66ff
+            }
+        }
+
+
+
+
+
+        /* ===== WHOLE PAGE SPARKLES ===== */
+        #sparkleCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 999;
+            /* naikkan tinggi */
+            /* mix-blend-mode: difference; */
+            filter: blur(0.5px);
+            /* mix-blend-mode: screen; */
+            /* mix-blend-mode: color-dodge; */
+        }
+
+
+        .start-btn {
+            margin-top: 30px;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(45deg, #ffffff, #ffd6ec);
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
             font-weight: bold;
+            cursor: pointer;
+            transition: 0.4s;
+            background: linear-gradient(45deg, #ff4081, #ff80ab, #ff4081);
+            background-size: 200% auto;
+            transition: 0.5s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
         }
 
-        .success {
-            color: green;
+        .start-btn:hover,
+        .back-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.5);
         }
 
-        .error {
-            color: red;
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(45deg, #ff4081, #ffcc00);
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            z-index: 9999;
+            transition: 0.3s;
+        }
+
+        .hero.fade-out {
+            opacity: 0;
+            transform: scale(1.08);
+            transition:
+                opacity 0.8s ease,
+                transform 1s cubic-bezier(.77, 0, .18, 1);
+        }
+
+        #mainContent {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: 1.2s ease;
+        }
+
+        #mainContent.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== T&C checkbox ===== */
+        .tnc-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 15px 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .tnc-container input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #ff4081;
+            /* custom pink */
+            cursor: pointer;
+        }
+
+        .tnc-link {
+            color: #ff4081;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* ===== Notification ===== */
+        .notif {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(45deg, #ff4081, #ffcc00);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 25px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s, transform 0.5s;
+            z-index: 9999;
+        }
+
+        .notif.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ================= GIFT OPTION POPUP ================= */
+        .gift-popup-content {
+            position: relative;
+            width: min(92vw, 900px);
+            max-height: 88vh;
+            overflow-y: auto;
+            padding: 40px 35px;
+            border-radius: 28px;
+            text-align: center;
+            animation: pop 0.5s ease;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+            background: linear-gradient(135deg, rgba(255, 245, 250, 0.97), rgba(255, 235, 245, 0.95));
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            backdrop-filter: blur(10px);
+        }
+
+        .gift-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: #d63384;
+            margin-bottom: 10px;
+        }
+
+        .gift-subtitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            color: #a14b6d;
+            margin-bottom: 30px;
+        }
+
+        .gift-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+            margin-top: 25px;
+        }
+
+        .gift-card {
+            background: rgba(255, 255, 255, 0.75);
+            border-radius: 24px;
+            padding: 28px 20px;
+            cursor: pointer;
+            transition: 0.35s ease;
+            box-shadow: 0 12px 28px rgba(255, 64, 129, 0.12);
+            border: 1px solid rgba(255, 192, 203, 0.3);
+        }
+
+        .gift-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 20px 35px rgba(255, 64, 129, 0.18);
+        }
+
+        .gift-icon {
+            font-size: 46px;
+            margin-bottom: 12px;
+        }
+
+        .gift-card h3 {
+            font-size: 22px;
+            color: #ff4081;
+            margin-bottom: 10px;
+        }
+
+        .gift-card p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* ================= GIFT FORM POPUP ================= */
+        .gift-form-popup {
+            position: relative;
+            width: min(92vw, 550px);
+            max-height: 88vh;
+            overflow-y: auto;
+            padding: 40px 35px;
+            border-radius: 28px;
+            text-align: left;
+            animation: pop 0.45s ease;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+            background: linear-gradient(135deg, rgba(255, 245, 250, 0.97), rgba(255, 235, 245, 0.95));
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            backdrop-filter: blur(10px);
+        }
+
+        .gift-form-popup h2 {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            color: #d63384;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .gift-form-popup input,
+        .gift-form-popup textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 16px;
+            border: 2px solid #ffc1d3;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .gift-form-popup input:focus,
+        .gift-form-popup textarea:focus {
+            border-color: #ff4081;
+            outline: none;
+            box-shadow: 0 0 12px rgba(255, 64, 129, 0.25);
+        }
+
+        .gift-form-popup textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .gift-form-popup button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 16px;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            margin-top: 10px;
+            background: linear-gradient(45deg, #ff4081, #ff80ab, #ff4081);
+            background-size: 200% auto;
+            transition: 0.5s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .gift-form-popup button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 64, 129, 0.35);
+            background-position: right center;
+        }
+
+        /* animation for drop/close */
+        .gift-popup-content.closing {
+            animation: dropOut 0.35s ease forwards;
+        }
+
+        @keyframes dropOut {
+            from {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+
+            to {
+                opacity: 0;
+                transform: translateY(60px) scale(0.95);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gift-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gift-popup-content,
+            .gift-form-popup {
+                padding: 28px 22px;
+                border-radius: 22px;
+            }
+
+            .gift-title {
+                font-size: 28px;
+            }
         }
     </style>
+
 </head>
 
 <body>
+    <audio id="bgMusic" loop>
+        <source src="asset/Taylor Swift - Message In A Bottle (Taylor's Version) (From The Vault) (Lyric Video).mp3"
+            type="audio/mpeg">
+    </audio>
+    <canvas id="sparkleCanvas"></canvas>
 
-    <div class="container">
-        <h2>Feedback Form</h2>
-        <input id="name" placeholder="DDNNNNNNNama" required>
-        <input id="phone" placeholder="Phone" required>
-        <textarea id="warna" placeholder="Warna" required></textarea>
-        <button id="submitBtn" onclick="submitForm()">Submit</button>
-        <p id="status"></p>
+    <section class="hero">
+        <div class="glow-bg"></div>
+        <h1 class="hero-title">
+            Hello!
+        </h1>
+        <p class="hero-sub">
+            This is your Birthday Celebration Just For You ✨
+        </p>
+        <button id="startBtn" class="start-btn">Start 💖</button>
+    </section>
+
+
+
+    <main id="mainContent" style="display:none;">
+
+
+        <!-- <button id="backBtn" class="back-btn">Back 💖</button> -->
+        <!-- ================= SECTION 5 ================= -->
+        <section class="section5">
+            <!-- Video Background -->
+            <!-- <video autoplay muted loop playsinline class="video-bg">
+                <source src="asset/vidbunga.mp4" type="video/mp4">
+            </video> -->
+
+            <!-- <div class="section5-content">
+                <h2>For Someone Very Special 💐</h2>
+                <p>Happy Birthday! 🎉</p>
+            </div> -->
+        </section>
+        <!-- ================= SECTION 1 ================= -->
+        <section class="section1">
+
+            <div class="text">
+                <h1 style="font-family: 'Poppins', sans-serif; font-weight: bolder;">Happy Birthday, Farhanah</h1>
+                <p style="font-family:'Poppins', sans-serif;">
+                    Today is a very special day for our pretty princess Siti Nur Farhanah.
+                    May all the goodness, love, happiness, and endless blessings always be with you wherever you go.
+                    Saya sentiasa doakan yang terbaik untuk awak dalam apa jua keadaan, tak kira waktu senang atau
+                    susah, tak kira awak dekat atau jauh.
+                    I will always pray that life treats you gently and beautifully, because someone like you deserves
+                    nothing less than that.
+                    May all your wishes become real, one by one, in the most beautiful way possible.
+                    Saya sentiasa doakan yang terbaik untuk awak dalam apa jua keadaan. May all your wishes become real.
+                    Moga menjadi insan yang lebih bahagia dalam kehidupan ini dan sentiasa ceria.
+                    Kerana sesungguhnya you are very happy person and got blessing with all good person around you.
+                    Thank you for being one of the most beautiful parts of my life, thankyou for cameback, Thank you for
+                    being brave enough to approach me again, thankyou for everything.
+                    I truly believe that you are blessed with so many good people around you because your heart is also
+                    full of kindness and softness.
+                    Happy Birthday once again, my pretty princess. 🤍
+                    May this new age bring you closer to everything beautiful that your heart has ever wished for.
+                    And no matter what happens, I will wish the very best for you, always baby.
+                </p>
+            </div>
+
+            <img src="asset/fsketch.png">
+        </section>
+
+
+
+
+
+
+
+
+        <!-- ================= SECTION 2 ================= -->
+        <section class="section2">
+            <h2 class="choose-title">Choose Your Surprise 💖</h2>
+
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img src="asset/f.jpg">
+                    <img src="asset/fana.jpg">
+                    <img src="asset/fana2.jpg">
+                    <img src="asset/fana6.jpg">
+                    <img src="asset/fana3.JPG">
+                    <img src="asset/fana4.jpg">
+
+                    <!-- duplicate for smooth infinite -->
+                    <img src="asset/f.jpg">
+                    <img src="asset/fana.jpg">
+                    <img src="asset/fana2.jpg">
+                    <img src="asset/fana6.jpg">
+                    <img src="asset/fana3.JPG">
+                    <img src="asset/fana4.jpg">
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- ================= SECTION 3 ================= -->
+        <section class="section3">
+            <h2 class="choose-title">Choose Your Surprise 💖</h2>
+
+            <div class="choose-grid">
+
+                <div class="choose-card">
+                    <div class="card-img-box">
+                        <img src="asset/_-removebg-preview.png">
+                    </div>
+                    <h3>Birthday Wish Letter</h3>
+                    <p>See our special moments together.</p>
+                    <button onclick="showMessage('memory')">Choose</button>
+                </div>
+
+                <!-- <div class="choose-card">
+                    <div class="card-img-box">
+                        <img src="asset/download__4_-removebg-preview.png">
+                    </div>
+                    <h3>Secret Message 💌</h3>
+                    <p>A hidden message just for you.</p>
+                    <button onclick="showMessage('secret')">Choose</button>
+                </div> -->
+
+                <div class="choose-card">
+                    <div class="card-img-box">
+                        <img src="asset/download__5_-removebg-preview.png">
+                    </div>
+                    <h3>Dating Plan w You 🌟</h3>
+                    <p>Something exciting ahead.</p>
+                    <button onclick="showMessage('future')">Choose</button>
+                </div>
+
+                <div class="choose-card">
+                    <div class="card-img-box">
+                        <img src="asset/_icon__pixel-removebg-preview.png">
+                    </div>
+                    <h3>Special Gift 4 U🎁</h3>
+                    <p>Your surprise gift awaits you.</p>
+                    <button onclick="showMessage('gift')">Choose</button>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <!-- ================= SECTION 4 ================= -->
+        <section class="section4">
+            <div class="form-box">
+                <h2>Send Your Wishes 💌</h2>
+                <input id="name" placeholder="Your Name" required>
+                <input id="phone" placeholder="Phone Number" required>
+                <textarea id="warna" placeholder="Message / Colour" required></textarea>
+
+                <div class="tnc-container">
+                    <input type="checkbox" id="tncCheckbox">
+                    <label for="tncCheckbox">
+                        I have read and accept the <span id="showTnc" class="tnc-link">Terms & Conditions</span>
+                    </label>
+                </div>
+
+                <button id="submitBtn">Send Love 💖</button>
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span onclick="closePopup()" class="close">&times;</span>
+            <p id="popup-text"></p>
+        </div>
     </div>
+    <!-- ================= Gift Option Popup ================= -->
+    <div id="giftOptionPopup" class="popup">
+        <div class="gift-popup-content">
+            <span onclick="closeGiftOptionPopup()" class="close">&times;</span>
+            <h2 class="gift-title">Choose Your Gift 🎁</h2>
+            <p class="gift-subtitle">Pick one surprise you’d love the most 💖</p>
+
+            <div class="gift-grid">
+                <div class="gift-card" onclick="openGiftForm('Flowers 💐')">
+                    <div class="gift-icon">💐</div>
+                    <h3>Pretty Shoes</h3>
+                    <p>Soft, pretty, and full of love.</p>
+                </div>
+
+                <div class="gift-card" onclick="openGiftForm('Chocolate 🍫')">
+                    <div class="gift-icon">🍫</div>
+                    <h3>Handbag</h3>
+                    <p>Sweet little happiness for you.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Gift Form Popup ================= -->
+    <div id="giftFormPopup" class="popup">
+        <div class="gift-form-popup">
+            <span onclick="closeGiftFormPopup()" class="close">&times;</span>
+            <h2 id="giftFormTitle">Claim Your Gift 💖</h2>
+            <p class="gift-subtitle">Fill this in and your surprise will be saved ✨</p>
+
+            <input id="giftName" type="text" placeholder="Your Name">
+            <input id="giftPhone" type="text" placeholder="Phone Number">
+            <textarea id="giftMessage" placeholder="Your Message / Favourite Colour / Anything 💌"></textarea>
+
+            <div class="tnc-container">
+                <input type="checkbox" id="giftTncCheckbox">
+                <label for="giftTncCheckbox">
+                    I have read and accept the <span onclick="openGiftTnc()" class="tnc-link">Terms & Conditions</span>
+                </label>
+            </div>
+
+            <button id="giftSubmitBtn">Submit Gift Request 🎀</button>
+        </div>
+    </div>
+    <!-- T&C Popup -->
+    <div id="tncPopup" class="popup">
+        <div class="popup-contentterm">
+            <span onclick="closeTncPopup()" class="close">&times;</span>
+            <h3>Terms & Conditions 📜</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
+                nunc et sollicitudin feugiat, sapien odio fermentum erat, ac tincidunt
+                libero nunc nec velit. Integer non tincidunt lectus. Vivamus nec purus
+                at turpis varius consectetur. 🎉
+            </p>
+        </div>
+    </div>
+
+    <!-- Beautiful Notification -->
+    <div id="notif" class="notif"></div>
+    <!-- const supabase = createClient(
+    "https://hsankpxjtwqbbsbcuuhh.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhzYW5rcHhqdHdxYmJzYmN1dWhoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE4NTUzMTIsImV4cCI6MjA4NzQzMTMxMn0.xOeR33CJr5Vt_0pWsn7qPcvPt4srpTsuNYKb1qwLDZk"
+    ) -->
 
     <script type="module">
         import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm"
 
         const supabase = createClient(
             "https://hsankpxjtwqbbsbcuuhh.supabase.co",
-            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhzYW5rcHhqdHdxYmJzYmN1dWhoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE4NTUzMTIsImV4cCI6MjA4NzQzMTMxMn0.xOeR33CJr5Vt_0pWsn7qPcvPt4srpTsuNYKb1qwLDZk"
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhzYW5rcHhqdHdxYmJzYmN1dWhoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MTg1NTMxMiwiZXhwIjoyMDg3NDMxMzEyfQ.HxLMSo3aCMGUMXUNM1BEm0F9RkvJkAB6ANKNMWc648A"
         )
 
         window.submitForm = async () => {
-            const name = document.getElementById("name").value
-            const phone = document.getElementById("phone").value
-            const warna = document.getElementById("warna").value
+            const submitBtn = document.getElementById("submitBtn");
+            const tncCheckbox = document.getElementById("tncCheckbox");
+            const showTnc = document.getElementById("showTnc");
+            const tncPopup = document.getElementById("tncPopup");
+            const notif = document.getElementById("notif");
+            const giftSubmitBtn = document.getElementById("giftSubmitBtn");
 
-            const { error } = await supabase
-                .from("submissions")
-                .insert([{ name, phone, warna }])
+            showTnc.addEventListener("click", () => {
+                tncPopup.style.display = "flex";
+            });
 
-            if (error) {
-                alert(error.message)
-                console.error(error)
-            } else {
-                alert("Submitted!")
+            function closeTncPopup() {
+                tncPopup.style.display = "none";
+            }
+
+            tncPopup.addEventListener("click", (e) => {
+                if (e.target === tncPopup) closeTncPopup();
+            });
+
+            submitBtn.addEventListener("click", async () => {
+                const name = document.getElementById("name").value.trim();
+                const phone = document.getElementById("phone").value.trim();
+                const warna = document.getElementById("warna").value.trim();
+
+                // Check if all fields are filled
+                if (!name || !phone || !warna) {
+                    showNotification("⚠️ Please fill in all fields!");
+                    return;
+                }
+
+                // Check T&C
+                if (!tncCheckbox.checked) {
+                    showNotification("⚠️ Please accept the Terms & Conditions first!");
+                    return;
+                }
+
+                // Send to Supabase
+                const { error } = await supabase
+                    .from("submissions")
+                    .insert([{ name, phone, warna }]);
+
+                if (error) {
+                    showNotification(`❌ ${error.message}`);
+                } else {
+                    showNotification("🎉 Your wishes have been sent!");
+                    document.getElementById("name").value = "";
+                    document.getElementById("phone").value = "";
+                    document.getElementById("warna").value = "";
+                    tncCheckbox.checked = false;
+                }
+            });
+
+            giftSubmitBtn.addEventListener("click", async () => {
+                const giftName = document.getElementById("giftName").value.trim();
+                const giftPhone = document.getElementById("giftPhone").value.trim();
+                const giftMessage = document.getElementById("giftMessage").value.trim();
+                const giftTncCheckbox = document.getElementById("giftTncCheckbox");
+
+                if (!giftName || !giftPhone || !giftMessage) {
+                    showNotification("⚠️ Please fill in all gift form fields!");
+                    return;
+                }
+
+                if (!giftTncCheckbox.checked) {
+                    showNotification("⚠️ Please accept the Terms & Conditions first!");
+                    return;
+                }
+
+                const { error } = await supabase
+                    .from("submissions")
+                    .insert([{
+                        name: giftName,
+                        phone: giftPhone,
+                        warna: `${window.selectedGift} | ${giftMessage}`
+                    }]);
+
+                if (error) {
+                    showNotification(`❌ ${error.message}`);
+                } else {
+                    showNotification(`🎁 Your ${selectedGift} request has been sent!`);
+
+                    document.getElementById("giftName").value = "";
+                    document.getElementById("giftPhone").value = "";
+                    document.getElementById("giftMessage").value = "";
+                    giftTncCheckbox.checked = false;
+
+                    closeGiftFormPopup();
+                }
+            });
+
+            // Beautiful notification function
+            function showNotification(message) {
+                notif.textContent = message;
+                notif.classList.add("show");
+
+                setTimeout(() => {
+                    notif.classList.remove("show");
+                }, 3000);
             }
         }
+
+        // ← ADD THIS LINE
+        submitForm(); // call the function so listeners attach
+    </script>
+    <script>
+        const startBtn = document.getElementById("startBtn");
+        const backBtn = document.getElementById("backBtn");
+        const hero = document.querySelector(".hero");
+        const mainContent = document.getElementById("mainContent");
+        const music = document.getElementById("bgMusic");
+
+        startBtn.addEventListener("click", async () => {
+
+            // fade out hero
+            hero.classList.add("fade-out");
+
+            // fade in music slowly
+            music.volume = 0;
+            await music.play();
+
+            let fadeAudio = setInterval(() => {
+                if (music.volume < 0) {
+                    music.volume += 0.02;
+                } else {
+                    clearInterval(fadeAudio);
+                }
+            }, 100);
+
+            // tunggu hero animation siap
+            setTimeout(() => {
+                hero.style.display = "none";
+                mainContent.style.display = "block";
+
+                setTimeout(() => {
+                    mainContent.classList.add("show");
+                }, 50);
+
+
+            }, 1000);
+
+        });
+
+        backBtn.addEventListener("click", () => {
+
+            // Stop music
+            music.pause();
+            music.currentTime = 0;
+            music.volume = 1;
+
+            // Hide main content
+            mainContent.classList.remove("show");
+            mainContent.style.display = "none";
+
+            // Reset hero
+            hero.style.display = "flex";
+            hero.classList.remove("fade-out");
+
+            // Scroll to top
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        });
+    </script>
+
+    <script>
+        // SPARKLES
+        const sparkleCanvas = document.getElementById("sparkleCanvas");
+        const sparkleCtx = sparkleCanvas.getContext("2d");
+        const sparkleImg = new Image();
+
+        sparkleImg.src = "asset/heartshape.png";
+        sparkleCanvas.width = window.innerWidth;
+        sparkleCanvas.height = window.innerHeight;
+
+        let sparks = [];
+
+        for (let i = 0; i < 120; i++) {
+            sparks.push({
+                x: Math.random() * sparkleCanvas.width,
+                y: Math.random() * sparkleCanvas.height,
+                radius: Math.random() * 2,
+                alpha: Math.random(),
+                speed: Math.random() * 0.5 + 0.2
+            });
+        }
+
+        function drawSparkles() {
+            sparkleCtx.clearRect(0, 0, sparkleCanvas.width, sparkleCanvas.height);
+
+            sparks.forEach(s => {
+                // sparkleCtx.beginPath();
+                // sparkleCtx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
+                // sparkleCtx.fillStyle = `rgba(255,255,255,${s.alpha})`;
+                // sparkleCtx.fill();
+                sparkleCtx.globalAlpha = s.alpha;
+                sparkleCtx.drawImage(sparkleImg, s.x, s.y, 10, 10);
+                sparkleCtx.globalAlpha = 1;
+
+                s.y -= s.speed;
+                s.alpha -= 0.002;
+
+                if (s.alpha <= 0) {
+                    s.x = Math.random() * sparkleCanvas.width;
+                    s.y = sparkleCanvas.height;
+                    s.alpha = Math.random();
+                }
+            });
+
+            requestAnimationFrame(drawSparkles);
+        }
+
+        drawSparkles();
+
+        window.addEventListener("resize", () => {
+            sparkleCanvas.width = window.innerWidth;
+            sparkleCanvas.height = window.innerHeight;
+        });
+    </script>
+
+    <script>
+        function showMessage(type) {
+            const popup = document.getElementById("popup");
+            const text = document.getElementById("popup-text");
+            const popupContent = document.querySelector(".popup-content");
+
+
+            if (type === "memory") {
+                text.innerHTML = `
+<span class="letter-title">To My Baby 💌</span>
+<span class="letter-sub">A letter from my heart, just for you</span>
+
+i want you to know baby. no one will understand how happy i am when you came back to me. 
+no one will understand the feeling when we got to be together again. im so happy. i never thought this thing was gonna happen. it feels impossible. 
+the moment you trying to approch me again even after a years, so many thing i’ve been thinking of. 
+“why should you came back?” ”who ask you to came back?” ”what makes you thinking to came back to me?!” 
+i dont know im just confuse and curious. at first i doesnt feel anything. bcs i already said that i have move forward from us. 
+but when im decided to call you, and the moment i heard your voice, oh myyyy. its been so long to not hear the voice that i miss so much. 
+i really mean it. how can i not be happy. you’re the one people call their fav ex. you’re the one i keep thinking about when im trying to be with someone else. 
+you’re the one that i couldnt move on from for more than a couple of years. you’re the one being mentioned in my English essay in SPM lol. 
+the moment you left me, no one will understand that feeling, that heartbreak. that feeling of being abandoned and betrayed. 
+when I thought that I could never lose you no matter what happened, I was wrong. I learned a lot of lessons from it. 
+it is the same person that made me feel one of the most both happiest and saddest moment in life. 
+it is you. the one that i had already set in my heart and want her to be my endgame. to be my last. to be my forever. no other than you. 
+you’ll be always be my love besides my family. you will never know and understand how important you are and how much you’ve affected to me. 
+
+saya sayang awak baby. with my whole heart. saya takkan berganjak sedikit pun dari awak. i already in love with you for whoever you are. 
+im so in love with Farhanah in any condition and situation. 
+letsay it was a whole different person with the exact same personality, i dont want that. i want you. thats it. now it is just up to you baby. 
+saya nak awak tau yang saya dh takkan pergi mana2 dah. whatever happens, whatever you did, whatever i did, whoever coming, i would stay. 
+i am sorry i cant be the one who besides you at your worst. i am sorry that i cant be the one who should listen to all your burden and problem. i am sorry for not loving you in a way i should. 
+nak tahu tak sebenarnya selepas yang kita keluar berbuka tu, saya cuba untuk follow je macam mana awak nak hubungan ni berjalan. 
+saya dh cuba taknak jealous. saya dh cuba taknak kacau awak kalau awak busy. saya dh cuba ikut rentak awak. and saya okay je. 
+if this is the way you want to be loved, and if this is the only way that will make you stay with me. saya akan buat. apa cara pun. even though sometimes it hurts me a lot. 
+kekadang sedih, overthinking, bosan. but if it is for you. if this is the mature relationship you meant, i would do it. 
+kadang2, saya sangat berharap yang kita dapat jadi macam kita yang dulu. sangat2 care dengan satu sama lain. sangat mengutamakan masing2 dulu lebih dari orang lain kat sekeliling. 
+menjadi keutamaan seseorang tu sangat lah best dan rasa special. tapi yah, tu dulu la tapi. kita yang dulu. 
+kalau awak rasa saya bukan priority awak, please, please, please, please, please, please dan please, cari orang lain yang awak rasa awak boleh jadikan dia priority. 
+saya bukan suruh awak pergi but, what kind of love is this, kalau tiada sedikit pun intention untuk atleast prihatin and perhatian for the one who you actually loved. 
+sorry. saya bukan nak halau awak. dan saya bukan suruh awak cari orang lain. saya memang taknak awak pergi pun. 
+saya just nak yang terbaik untuk awak. terbaik untuk kita. if it wasnt you, i would run. i try to fix this only because of you. 
+saya cuba untuk memperbetulkan apa yang patut dibetulkan. betulkan apa kesilapan yang sama jadi three years ago. sebelum kita boleh bergerak for the next phase awak. 
+saya taknak bila kita gerak makin kedepan but deep down each other still have something that cannot say and just keep it alone. i dont want it at all. 
+i want you to tell me everything that you can without feel being judge. saya nak tengok awak happy kalaupun awak happy tu dengan orang lain. 
+awak nak tahu tak. everything that makes you happy will make me happy too. lagi2 kalau awak sedih. saya pun akan sedih jugak. hihiks. 
+btw, tq sebab buat saya continue janji saya. okay la tuje. happy birthday baby princess cinta sayaa🤏🏼
+<span class="letter-end">— Yours, always 🤍</span>
+`; popupContent.style.backgroundImage = "url('asset/bg.jpg')";
+            }
+
+            if (type === "secret") {
+                text.innerHTML = "You are the best thing that ever happened to me 🥺";
+                popupContent.style.backgroundImage = "url('asset/download.jpg')";
+            }
+
+            if (type === "future") {
+                text.innerHTML = "More adventures together soon 🌍✨";
+                popupContent.style.backgroundImage = "url('asset/download.jpg')";
+            }
+
+            if (type === "gift") {
+                document.getElementById("giftOptionPopup").style.display = "flex";
+                return;
+            }
+
+            popup.style.display = "flex";
+        }
+        // tutup popup
+        function closePopup() {
+            const popup = document.getElementById("popup");
+            popup.style.display = "none";
+            // reset background
+            document.body.style.background = "linear-gradient(135deg, #ff7ea3, #fff0f7)";
+        }
+
+        // tutup bila klik overlay
+        const popup = document.getElementById("popup");
+        popup.addEventListener("click", (e) => {
+            if (e.target === popup) { // hanya kalau klik overlay, bukan content
+                closePopup();
+            }
+        });
+    </script>
+
+    <script>
+        // Intersection Observer untuk kesan "Reveal on Scroll"
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, observerOptions);
+
+        // Apply ke semua section
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = "0";
+            section.style.transform = "translateY(30px)";
+            section.style.transition = "all 1s ease-out";
+            observer.observe(section);
+        });
+
+        window.selectedGift = "";
+
+        function closeGiftOptionPopup() {
+            document.getElementById("giftOptionPopup").style.display = "none";
+        }
+
+        function closeGiftFormPopup() {
+            document.getElementById("giftFormPopup").style.display = "none";
+        }
+
+        function openGiftForm(giftType) {
+            window.selectedGift = giftType;
+
+            const optionPopup = document.getElementById("giftOptionPopup");
+            const optionContent = optionPopup.querySelector(".gift-popup-content");
+
+            optionContent.classList.add("closing");
+
+            setTimeout(() => {
+                optionPopup.style.display = "none";
+                optionContent.classList.remove("closing");
+
+                document.getElementById("giftFormTitle").innerText = `Claim Your ${giftType} 💖`;
+                document.getElementById("giftFormPopup").style.display = "flex";
+            }, 350);
+        }
+
+        function openGiftTnc() {
+            document.getElementById("tncPopup").style.display = "flex";
+        }
+
+        /* close if click outside */
+        document.getElementById("giftOptionPopup").addEventListener("click", (e) => {
+            if (e.target.id === "giftOptionPopup") {
+                closeGiftOptionPopup();
+            }
+        });
+
+        document.getElementById("giftFormPopup").addEventListener("click", (e) => {
+            if (e.target.id === "giftFormPopup") {
+                closeGiftFormPopup();
+            }
+        });
+    </script>
+    <script>
+        const slider = document.querySelector(".slider-wrapper");
+
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener("mousedown", (e) => {
+            isDown = true;
+            slider.style.cursor = "grabbing";
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+
+        slider.addEventListener("mouseleave", () => {
+            isDown = false;
+            slider.style.cursor = "grab";
+        });
+
+        slider.addEventListener("mouseup", () => {
+            isDown = false;
+            slider.style.cursor = "grab";
+        });
+
+        slider.addEventListener("mousemove", (e) => {
+            if (!isDown) return;
+
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 2;
+
+            slider.scrollLeft = scrollLeft - walk;
+        });
     </script>
 
 </body>
