@@ -22,32 +22,17 @@
             color: #333;
         }
 
-
-
-
-
-
-
-
         /* ================= SECTION 5 ================= */
         .section5 {
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 150px 20px !important;
-            /* Tambah padding supaya bernafas */
             min-height: 500px;
             background: url('asset/Happy Birthday.png');
-
-            /* background: url('asset/dark background with pink aura heart.jpg'); */
-            /* background: url('asset/canva.png'); */
-
             background-size: cover;
-            /* pastikan full cover */
             background-position: center;
-            /* tengahkan */
             background-repeat: no-repeat;
-            /* jangan repeat */
             text-align: center;
             position: relative;
         }
@@ -56,7 +41,6 @@
             content: "";
             position: absolute;
             inset: 0;
-            /* background: rgba(0, 0, 0, 0.25); */
         }
 
         .video-bg {
@@ -66,19 +50,12 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            /* crop/scale nicely */
             z-index: 1;
         }
 
-        /* .section5-content {
-            position: relative;
-            z-index: 2;
-            color: white;
-        } */
         .section5-content {
             position: relative;
             z-index: 2;
-            /* on top of video */
             color: white;
             text-align: center;
         }
@@ -99,14 +76,6 @@
             line-height: 1.7;
         }
 
-
-
-
-
-
-
-
-
         /* ================= SECTION 1 ================= */
         .section1 {
             display: flex;
@@ -114,16 +83,10 @@
             justify-content: center;
             gap: 50px;
             padding: 100px;
-            /* background: linear-gradient(135deg, #ffe6f0, #ffcce6); */
             background: url('asset/canva.png');
-
             background-size: cover;
-            /* pastikan full cover */
             background-position: center;
-            /* tengahkan */
             background-repeat: no-repeat;
-            /* jangan repeat */
-            /* soft pink */
         }
 
         .section1 .text {
@@ -148,11 +111,9 @@
             width: 100%;
             max-width: 400px;
             border-radius: 30px;
-            opacity: 0;
-            /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); */
+            opacity: 1;
         }
 
-        /* Responsive */
         @media(max-width:900px) {
             .section1 {
                 flex-direction: column;
@@ -160,34 +121,18 @@
             }
         }
 
-
-
-
-
-
-
-
         /* ================= SECTION 2 SLIDER ================= */
         .section2 {
-            /* padding: 60px 0; */
             overflow: hidden;
-            /* background: linear-gradient(135deg, #e6e6ff, #ccccff); */
             background: url('asset/ChatGPT 1.png');
             background-size: cover;
-            /* pastikan full cover */
             background-position: center;
-            /* tengahkan */
             background-repeat: no-repeat;
-            /* jangan repeat */
-            /* min-height: 500px; */
-            /* adjust ikut tinggi Section 1 */
             display: flex;
             flex-direction: column;
             justify-content: center;
-            /* center vertically */
             align-items: center;
             padding: 150px 20px !important;
-            /* Tambah padding supaya bernafas */
             min-height: 500px;
         }
 
@@ -197,10 +142,8 @@
             overflow-x: scroll;
             scrollbar-width: none;
             border-radius: 25px;
-            /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); */
             position: relative;
             cursor: grab;
-
         }
 
         .slider-wrapper::-webkit-scrollbar {
@@ -211,7 +154,6 @@
             display: flex;
             gap: 20px;
             width: max-content;
-            /* penting untuk infinite loop */
             animation: scroll 30s linear infinite;
         }
 
@@ -225,14 +167,12 @@
             transition: transform 0.4s;
             border: 5px solid white;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            /* display: block; */
         }
 
         .slider img:hover {
             transform: scale(1.08);
         }
 
-        /* Auto scroll animation */
         @keyframes scroll {
             0% {
                 transform: translateX(0);
@@ -243,30 +183,18 @@
             }
         }
 
-        /* Pause when hover */
         .slider-wrapper:hover .slider {
             animation-play-state: paused;
         }
 
-
-
-
-
-
-
-
-
-
+        /* ================= SECTION 3 ================= */
         .section3 {
             min-height: 500px;
-            /* adjust ikut tinggi Section 1 */
             display: flex;
             flex-direction: column;
             justify-content: center;
-            /* center vertically */
             align-items: center;
             padding: 100px 20px;
-            /* sama macam Section 1 */
             background: url('asset/Intricate floral patterns in black and white.png');
             background-size: cover;
             background-position: center;
@@ -275,17 +203,14 @@
             overflow: hidden;
         }
 
-        /* dark overlay */
         .section3::before {
             content: "";
             position: absolute;
             inset: 0;
             background: rgba(0, 0, 0, 0.7);
-            /* adjust opacity sini */
             z-index: 1;
         }
 
-        /* content above overlay */
         .section3>* {
             position: relative;
             z-index: 2;
@@ -301,39 +226,26 @@
         .choose-grid {
             display: flex;
             flex-direction: row;
-            /* arrange horizontally */
             gap: 20px;
-            /* jarak antara part */
             max-width: 1000px;
-            /* boleh adjust ikut screen */
             margin: auto;
             align-items: stretch;
-            /* pastikan semua part tinggi sama */
-            /* display: grid; */
-            /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
-            /* gap: 25px; */
-            /* width: 90%; */
-            /* max-width: 1100px; */
         }
 
         .choose-card {
             flex: 1;
-            /* supaya 4 part sama lebar */
             height: 500px;
-            /* tinggi sama macam Section 1 */
             padding: 20px;
             border-radius: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            /* center content vertically */
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             transition: 0.3s;
         }
 
         .card-img-box {
             height: 120px;
-            /* fix height supaya semua sama */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -348,22 +260,18 @@
 
         .choose-card:nth-child(1) {
             background: #ffe6f0;
-            /* soft pink */
         }
 
         .choose-card:nth-child(2) {
             background: #e6e6ff;
-            /* soft lilac */
         }
 
         .choose-card:nth-child(3) {
             background: #cceeff;
-            /* soft blue */
         }
 
         .choose-card:nth-child(4) {
             background: #fff7cc;
-            /* soft yellow */
         }
 
         .choose-card:hover {
@@ -392,25 +300,11 @@
             transition: 0.3s;
             background: linear-gradient(45deg, #ff4081, #ff80ab, #ff4081);
             text-transform: uppercase;
-            /* background-size: 200% auto;
-            transition: 0.5s;
-            letter-spacing: 1px;
-            font-weight: 600; */
         }
 
         .choose-card button:hover {
             transform: scale(1.1);
         }
-
-        /* 
-        .card-img {
-            width: 110px;
-            height: 90px;
-            object-fit: cover;
-            margin-bottom: 15px;
-            align-self: center;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        } */
 
         .popup {
             display: none;
@@ -424,6 +318,7 @@
             align-items: center;
             z-index: 99999;
             overflow-y: auto;
+            box-sizing: border-box;
         }
 
         .popup-content {
@@ -543,41 +438,6 @@
             }
         }
 
-        @media (max-width: 768px) {
-            .popup-content {
-                width: 92vw;
-                max-height: 88vh;
-                padding: 28px 22px;
-                border-radius: 22px;
-            }
-
-            #popup-text {
-                font-size: 15px;
-                line-height: 1.9;
-            }
-
-            #popup-text .letter-title {
-                font-size: 26px;
-            }
-
-            #popup-text .letter-sub {
-                font-size: 14px;
-            }
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         /* ================= SECTION 4 FORM ================= */
         .section4 {
             padding: 120px 20px;
@@ -648,33 +508,7 @@
             box-shadow: 0 12px 25px rgba(255, 64, 129, 0.3);
         }
 
-        /* MOBILE */
-        @media (max-width: 768px) {
-
-            .section4 {
-                padding: 90px 16px;
-            }
-
-            .form-box {
-                padding: 30px 22px;
-                border-radius: 24px;
-            }
-
-            .form-box h2 {
-                font-size: 1.7rem;
-            }
-
-            .form-box textarea {
-                min-height: 160px;
-                font-size: 15px;
-            }
-        }
-
-
-
-
         /* ================= ULTIMATE HERO ================= */
-
         .hero {
             position: relative;
             height: 100vh;
@@ -682,22 +516,15 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            /* background: radial-gradient(circle at top, #ff9ecf, #783e51, #8a2be2); */
             background-image: url('asset/kucing.png');
-            /* <-- gambar awak */
             background-size: cover;
-            /* pastikan full cover */
             background-position: center;
-            /* tengahkan */
             background-repeat: no-repeat;
-            /* jangan repeat */
             overflow: hidden;
             text-align: center;
             will-change: transform, opacity;
-
         }
 
-        /* Moving glowing blobs */
         .glow-bg::before,
         .glow-bg::after {
             content: "";
@@ -738,34 +565,23 @@
             font-weight: 700;
             letter-spacing: 6px;
             text-transform: uppercase;
-
             background: linear-gradient(90deg,
                     #ffffff,
                     #ffd6f2,
                     #fff5c3,
                     #ffffff);
-
             background-size: 300% auto;
-
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-
             animation:
                 fadeUp 2s ease forwards,
                 shimmer 6s linear infinite,
                 glowPulse 3s ease-in-out infinite alternate;
-
             opacity: 0;
             transform: translateY(40px);
-
-            text-shadow:
-                0 0 20px rgba(255, 255, 255, 0.35),
-                0 0 40px rgba(255, 192, 203, 0.25);
-
             position: relative;
         }
 
-        /* Subtitle */
         .hero-sub {
             font-family: 'Poppins', sans-serif;
             font-size: 1.2rem;
@@ -776,7 +592,6 @@
             animation-delay: 1.5s;
         }
 
-        /* Animations */
         @keyframes fadeUp {
             to {
                 opacity: 1;
@@ -790,13 +605,13 @@
             }
         }
 
-        @keyframes gradientMove {
+        @keyframes shimmer {
             0% {
-                background-position: 0%
+                background-position: 0% center;
             }
 
             100% {
-                background-position: 200%
+                background-position: 300% center;
             }
         }
 
@@ -810,10 +625,6 @@
             }
         }
 
-
-
-
-
         /* ===== WHOLE PAGE SPARKLES ===== */
         #sparkleCanvas {
             position: fixed;
@@ -823,26 +634,19 @@
             height: 100%;
             pointer-events: none;
             z-index: 999;
-            /* naikkan tinggi */
-            /* mix-blend-mode: difference; */
             filter: blur(0.5px);
-            /* mix-blend-mode: screen; */
-            /* mix-blend-mode: color-dodge; */
         }
-
 
         .start-btn {
             margin-top: 30px;
             padding: 15px 40px;
             border: none;
             border-radius: 50px;
-            background: linear-gradient(45deg, #ffffff, #ffd6ec);
             color: #ffffff;
             font-family: 'Poppins', sans-serif;
             font-size: 18px;
             font-weight: bold;
             cursor: pointer;
-            transition: 0.4s;
             background: linear-gradient(45deg, #ff4081, #ff80ab, #ff4081);
             background-size: 200% auto;
             transition: 0.5s;
@@ -906,7 +710,6 @@
             width: 18px;
             height: 18px;
             accent-color: #ff4081;
-            /* custom pink */
             cursor: pointer;
         }
 
@@ -942,7 +745,6 @@
         /* ================= GIFT OPTION POPUP ================= */
         .gift-popup-content {
             position: relative;
-            /* width: min(92vw, 900px); */
             max-height: 88vh;
             overflow-y: auto;
             padding: 40px 35px;
@@ -954,7 +756,6 @@
             border: 1px solid rgba(255, 255, 255, 0.35);
             backdrop-filter: blur(10px);
             width: min(95vw, 1100px);
-
         }
 
         .gift-title {
@@ -1084,7 +885,6 @@
             background-position: right center;
         }
 
-        /* animation for drop/close */
         .gift-popup-content.closing {
             animation: dropOut 0.35s ease forwards;
         }
@@ -1101,175 +901,184 @@
             }
         }
 
+        /* ================= MOBILE RESPONSIVE ================= */
         @media (max-width: 768px) {
+
+            body {
+                overflow-x: hidden;
+            }
+
+            /* HERO */
+            .hero {
+                padding: 20px;
+                text-align: center;
+                background-position: center;
+            }
+
+            .hero-sub {
+                font-size: 1rem;
+                padding: 0 20px;
+                line-height: 1.8;
+            }
+
+            .start-btn {
+                width: 90%;
+                max-width: 300px;
+                padding: 14px 20px;
+                font-size: 15px;
+            }
+
+            /* SECTION 1 */
+            .section1 {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+                padding: 70px 20px;
+            }
+
+            .section1 .text {
+                width: 100%;
+            }
+
+            .section1 h1 {
+                font-size: 2.2rem !important;
+                line-height: 1.3;
+            }
+
+            .section1 p {
+                font-size: 15px;
+                line-height: 2;
+                text-align: left;
+            }
+
+            .section1 img {
+                max-width: 270px;
+                margin: auto;
+            }
+
+            /* SECTION 2 */
+            .section2 {
+                padding: 90px 15px !important;
+            }
+
+            .slider-wrapper {
+                width: 100%;
+            }
+
+            .slider img {
+                width: 220px;
+                height: 300px;
+            }
+
+            /* SECTION 3 */
+            .section3 {
+                padding: 80px 18px;
+            }
+
+            .choose-title {
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 35px;
+            }
+
+            .choose-grid {
+                flex-direction: column;
+                width: 100%;
+                gap: 24px;
+            }
+
+            .choose-card {
+                width: 100%;
+                min-height: auto;
+                height: auto;
+                padding: 28px 22px;
+            }
+
+            .choose-card button {
+                width: 100%;
+            }
+
+            /* SECTION 4 */
+            .section4 {
+                padding: 90px 16px;
+            }
+
+            .form-box {
+                padding: 30px 22px;
+                border-radius: 24px;
+            }
+
+            .form-box h2 {
+                font-size: 1.7rem;
+            }
+
+            .form-box textarea {
+                min-height: 160px;
+                font-size: 15px;
+            }
+
+            /* SECTION 5 */
+            .section5 {
+                min-height: 350px;
+                padding: 90px 20px !important;
+                background-position: center;
+            }
+
+            /* POPUP */
+            .popup {
+                padding: 15px;
+            }
+
+            .popup-content,
+            .gift-popup-content,
+            .gift-form-popup,
+            .popup-contentterm {
+                width: 100%;
+                max-width: 100%;
+                padding: 28px 20px;
+                border-radius: 24px;
+            }
+
+            #popup-text {
+                font-size: 14px;
+                line-height: 2;
+            }
+
+            #popup-text .letter-title {
+                font-size: 26px;
+            }
+
+            #popup-text .letter-sub {
+                font-size: 14px;
+            }
+
+            .close {
+                width: 34px;
+                height: 34px;
+                font-size: 20px;
+            }
+
+            /* GIFT */
             .gift-grid {
                 grid-template-columns: 1fr;
             }
 
-            .gift-popup-content,
-            .gift-form-popup {
-                padding: 28px 22px;
-                border-radius: 22px;
+            .gift-card {
+                padding: 24px 18px;
+            }
+
+            .gift-card h3 {
+                font-size: 20px;
             }
 
             .gift-title {
                 font-size: 28px;
             }
 
-
-            /* ================= CLEAN MOBILE RESPONSIVE ================= */
-
-            @media (max-width: 768px) {
-
-                body {
-                    overflow-x: hidden;
-                }
-
-                /* HERO */
-                .hero {
-                    padding: 20px;
-                    text-align: center;
-                    background-position: center;
-                }
-
-                /* 
-                .hero-title {
-                    font-size: 3rem;
-                    line-height: 1.2;
-                    padding: 0 10px;
-                } */
-
-                .hero-sub {
-                    font-size: 1rem;
-                    padding: 0 20px;
-                    line-height: 1.8;
-                }
-
-                .start-btn {
-                    width: 90%;
-                    max-width: 300px;
-                    padding: 14px 20px;
-                    font-size: 15px;
-                }
-
-                /* SECTION 1 */
-                .section1 {
-                    flex-direction: column;
-                    text-align: center;
-                    gap: 40px;
-                    padding: 70px 20px;
-                }
-
-                .section1 .text {
-                    width: 100%;
-                }
-
-                .section1 h1 {
-                    font-size: 2.2rem !important;
-                    line-height: 1.3;
-                }
-
-                .section1 p {
-                    font-size: 15px;
-                    line-height: 2;
-                    text-align: left;
-                }
-
-                .section1 img {
-                    max-width: 270px;
-                    margin: auto;
-                }
-
-                /* SECTION 2 */
-                .section2 {
-                    padding: 90px 15px !important;
-                }
-
-                .slider-wrapper {
-                    width: 100%;
-                }
-
-                .slider img {
-                    width: 220px;
-                    height: 300px;
-                }
-
-                /* SECTION 3 */
-                .section3 {
-                    padding: 80px 18px;
-                }
-
-                .choose-title {
-                    font-size: 30px;
-                    text-align: center;
-                    margin-bottom: 35px;
-                }
-
-                .choose-grid {
-                    flex-direction: column;
-                    width: 100%;
-                    gap: 24px;
-                }
-
-                .choose-card {
-                    width: 100%;
-                    min-height: auto;
-                    height: auto;
-                    padding: 28px 22px;
-                }
-
-                .choose-card button {
-                    width: 100%;
-                }
-
-
-
-                /* POPUP */
-                .popup {
-                    padding: 15px;
-                }
-
-                .popup-content,
-                .gift-popup-content,
-                .gift-form-popup,
-                .popup-contentterm {
-                    width: 100%;
-                    max-width: 100%;
-                    padding: 28px 20px;
-                    border-radius: 24px;
-                }
-
-                #popup-text {
-                    font-size: 14px;
-                    line-height: 2;
-                }
-
-                .close {
-                    width: 34px;
-                    height: 34px;
-                    font-size: 20px;
-                }
-
-                /* GIFT */
-                .gift-grid {
-                    grid-template-columns: 1fr;
-                }
-
-                .gift-card {
-                    padding: 24px 18px;
-                }
-
-                .gift-card h3 {
-                    font-size: 20px;
-                }
-
-                /* SECTION 5 */
-                .section5 {
-                    min-height: 350px;
-                    padding: 90px 20px !important;
-                    background-position: center;
-                }
-
+            .gift-popup-content,
+            .gift-form-popup {
+                padding: 28px 22px;
+                border-radius: 22px;
             }
         }
     </style>
@@ -1294,27 +1103,14 @@
         <button id="startBtn" class="start-btn">Start 💖</button>
     </section>
 
-
-
     <main id="mainContent" style="display:none;">
 
-
-        <!-- <button id="backBtn" class="back-btn">Back 💖</button> -->
         <!-- ================= SECTION 5 ================= -->
         <section class="section5">
-            <!-- Video Background -->
-            <!-- <video autoplay muted loop playsinline class="video-bg">
-                <source src="asset/vidbunga.mp4" type="video/mp4">
-            </video> -->
-
-            <!-- <div class="section5-content">
-                <h2>For Someone Very Special 💐</h2>
-                <p>Happy Birthday! 🎉</p>
-            </div> -->
         </section>
+
         <!-- ================= SECTION 1 ================= -->
         <section class="section1">
-
             <div class="text">
                 <h1 style="font-family: 'Poppins', sans-serif; font-weight: bolder;">Happy Birthday, Cinta</h1>
                 <p style="font-family:'Poppins', sans-serif;">
@@ -1351,19 +1147,12 @@
                 </p>
             </div>
 
-            <img src="asset/fsketch.png">
+            <img src="asset/fsketch.png" style="opacity: 0;">
         </section>
-
-
-
-
-
-
-
 
         <!-- ================= SECTION 2 ================= -->
         <section class="section2">
-            <h2 class="choose-title"><b>Our Precious Memories</b></h2>
+            <h2 class="choose-title"><b>Our New Precious Memories</b></h2>
 
             <div class="slider-wrapper">
                 <div class="slider">
@@ -1385,12 +1174,6 @@
             </div>
         </section>
 
-
-
-
-
-
-
         <!-- ================= SECTION 3 ================= -->
         <section class="section3">
             <h2 class="choose-title">This is For You 💖</h2>
@@ -1402,25 +1185,14 @@
                         <img src="asset/_-removebg-preview.png">
                     </div>
                     <h3>Surat Rahsia SHHHH</h3>
-                    <!-- <p>See our special moments together.</p> -->
                     <button onclick="showMessage('memory')"><b>Select</b></button>
                 </div>
-
-                <!-- <div class="choose-card">
-                    <div class="card-img-box">
-                        <img src="asset/download__4_-removebg-preview.png">
-                    </div>
-                    <h3>Secret Message 💌</h3>
-                    <p>A hidden message just for you.</p>
-                    <button onclick="showMessage('secret')">Choose</button>
-                </div> -->
 
                 <div class="choose-card">
                     <div class="card-img-box">
                         <img src="asset/download__5_-removebg-preview.png">
                     </div>
                     <h3>Dating Plan kita</h3>
-                    <!-- <p>Something exciting ahead.</p> -->
                     <button onclick="showMessage('future')"><b>Select</b></button>
                 </div>
 
@@ -1429,7 +1201,6 @@
                         <img src="asset/_icon__pixel-removebg-preview.png">
                     </div>
                     <h3>Hadiah untuk Awak</h3>
-                    <!-- <p>Your surprise gift awaits you.</p> -->
                     <button onclick="showMessage('gift')" disabled style="background: grey; cursor: not-allowed;">
                         <b>Locked</b>
                     </button>
@@ -1437,11 +1208,6 @@
 
             </div>
         </section>
-
-
-
-
-
 
         <!-- ================= SECTION 4 ================= -->
         <section class="section4">
@@ -1453,7 +1219,6 @@
 
                 <div class="tnc-container">
                     <input type="checkbox" id="tncCheckbox">
-
                     <label for="tncCheckbox">
                         I have read and accept the
                         <span id="showTnc" class="tnc-link">
@@ -1468,11 +1233,6 @@
             </div>
         </section>
 
-
-
-
-
-
     </main>
 
     <!-- Popup -->
@@ -1482,27 +1242,24 @@
             <p id="popup-text"></p>
         </div>
     </div>
+
     <!-- ================= Gift Option Popup ================= -->
     <div id="giftOptionPopup" class="popup">
         <div class="gift-popup-content">
             <span onclick="closeGiftOptionPopup()" class="close">&times;</span>
             <h2 class="gift-title">Choose Your Gift 🎁</h2>
-            <p class="gift-subtitle">Pick one surprise you’d love the most 💖</p>
+            <p class="gift-subtitle">Pick one surprise you'd love the most 💖</p>
 
             <div class="gift-grid">
                 <div class="gift-card" onclick="openGiftForm('Kasut! 👠')">
                     <div class="gift-icon">👠</div>
                     <h3>Nak Hadiah Kasut!</h3>
-                    <!-- <p>Elegant, stylish, and made to brighten your every step.</p> -->
                 </div>
 
                 <div class="gift-card" onclick="openGiftForm('Handbag! 👜')">
                     <div class="gift-icon">👜</div>
                     <h3>Nak Hadiah Handbag!</h3>
-                    <!-- <p>Chic and timeless — the perfect little gift for someone special.</p> -->
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -1514,10 +1271,6 @@
             <h2 id="giftFormTitle">Claim Your Gift 💖</h2>
             <p class="gift-subtitle">Fill this in and your surprise will be saved ✨</p>
 
-            <!-- <input id="giftName" type="text" placeholder="Your Name">
-            <input id="giftPhone" type="text" placeholder="Phone Number">
-            <textarea id="giftMessage" placeholder="Your Message / Favourite Colour / Anything 💌"></textarea> -->
-
             <div class="tnc-container">
                 <input type="checkbox" id="giftTncCheckbox">
                 <label for="giftTncCheckbox">
@@ -1528,15 +1281,13 @@
             <button id="giftSubmitBtn">Submit Gift Request 🎀</button>
         </div>
     </div>
+
     <!-- ================= Dating Plan Popup ================= -->
     <div id="datingPopup" class="popup">
         <div class="gift-popup-content">
             <span onclick="closeDatingPopup()" class="close">&times;</span>
 
             <h2 class="gift-title">Pilih nak pergi mana 🌸</h2>
-            <!-- <p class="gift-subtitle">
-                Pick one place and let's make beautiful memories together ✨
-            </p> -->
 
             <div class="gift-grid">
 
@@ -1567,33 +1318,22 @@
             </div>
         </div>
     </div>
+
     <!-- T&C Popup -->
-    <!-- <div id="tncPopup" class="popup">
-        <div class="popup-contentterm">
-            <span onclick="closeTncPopup()" class="close">&times;</span>
-            <h3>Terms & Conditions 📜</h3>
-            <p>
-                ANDA DILARANG SAMA SEKALI UNTUK MEMBELI SEBARANG BARANG DALAM BENTUK HADIAH, UPAH MAHUPUN GANJARAN
-                KEPADA AMEEN AKEEF. KALAU TIDAK ANDA AKAN DIKENAKAN TINDAKAN DIATAS AKTA 67 (11).
-            </p>
-        </div>
-    </div> -->
     <div id="tncPopup" class="popup">
         <div class="popup-contentterm">
             <span onclick="closeTncPopup()" class="close">&times;</span>
             <h3>Terms & Conditions 📜</h3>
             <p>
-                ANDA DIBENARKAN MENULIS APA-APA SAHAJA DI RUANGAN INI SEMAHU ANDA. DENGAN PERINGATAN BAHAWA AKEEF BOLEH MEMBACANYA DAN IANYA TIDAK RAHSIA PUN. KALAU TIDAK ANDA AKAN DIKENAKAN TINDAKAN DIATAS AKTA 67 (11) ATAU SETIMPAL.
+                ANDA DIBENARKAN MENULIS APA-APA SAHAJA DI RUANGAN INI SEMAHU ANDA. DENGAN PERINGATAN BAHAWA AKEEF BOLEH
+                MEMBACANYA DAN IANYA TIDAK RAHSIA PUN. KALAU TIDAK ANDA AKAN DIKENAKAN TINDAKAN DIATAS AKTA 67 (11) ATAU
+                SETIMPAL.
             </p>
         </div>
     </div>
 
     <!-- Beautiful Notification -->
     <div id="notif" class="notif"></div>
-    <!-- const supabase = createClient(
-    "https://hsankpxjtwqbbsbcuuhh.supabase.co",
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhzYW5rcHhqdHdxYmJzYmN1dWhoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE4NTUzMTIsImV4cCI6MjA4NzQzMTMxMn0.xOeR33CJr5Vt_0pWsn7qPcvPt4srpTsuNYKb1qwLDZk"
-    ) -->
 
     <script type="module">
         import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm"
@@ -1604,47 +1344,46 @@
         )
         window.supabase = supabase;
 
+        window.showNotification = function (message) {
+            const notif = document.getElementById("notif");
+            notif.textContent = message;
+            notif.classList.add("show");
+            setTimeout(() => {
+                notif.classList.remove("show");
+            }, 3000);
+        }
+
         window.submitForm = async () => {
             const submitBtn = document.getElementById("submitBtn");
             const tncCheckbox = document.getElementById("tncCheckbox");
             const showTnc = document.getElementById("showTnc");
             const tncPopup = document.getElementById("tncPopup");
-            const notif = document.getElementById("notif");
             const giftSubmitBtn = document.getElementById("giftSubmitBtn");
 
             showTnc.addEventListener("click", () => {
                 tncPopup.style.display = "flex";
             });
+
             window.closeTncPopup = function () {
                 document.getElementById("tncPopup").style.display = "none";
             }
-
 
             tncPopup.addEventListener("click", (e) => {
                 if (e.target === tncPopup) closeTncPopup();
             });
 
             submitBtn.addEventListener("click", async () => {
-                // const name = document.getElementById("name").value.trim();
-                // const phone = document.getElementById("phone").value.trim();
                 const warna = document.getElementById("warna").value.trim();
 
-                // Check if all fields are filled
-                // if (!name || !phone || !warna) {
-                //     showNotification("⚠️ Please fill in all fields!");
-                //     return;
-                // }
                 if (!warna) {
                     showNotification("⚠️ Please fill in all fields!");
                     return;
                 }
-                // Check T&C
                 if (!tncCheckbox.checked) {
                     showNotification("⚠️ Please accept the Terms & Conditions first!");
                     return;
                 }
 
-                // Send to Supabase
                 const { error } = await supabase
                     .from("submissions")
                     .insert([{ warna }]);
@@ -1653,15 +1392,12 @@
                     showNotification(`❌ ${error.message}`);
                 } else {
                     showNotification("🎉 Your wishes have been sent!");
-                    // document.getElementById("name").value = "";
-                    // document.getElementById("phone").value = "";
                     document.getElementById("warna").value = "";
                     tncCheckbox.checked = false;
                 }
             });
 
             giftSubmitBtn.addEventListener("click", async () => {
-
                 const giftTncCheckbox = document.getElementById("giftTncCheckbox");
 
                 if (!giftTncCheckbox.checked) {
@@ -1678,29 +1414,16 @@
                 if (error) {
                     showNotification(`❌ ${error.message}`);
                 } else {
-
                     showNotification(`🎁 Your ${window.selectedGift} request has been sent!`);
-
                     giftTncCheckbox.checked = false;
-
                     closeGiftFormPopup();
                 }
             });
-
-            // Beautiful notification function
-            window.showNotification = function (message) {
-                notif.textContent = message;
-                notif.classList.add("show");
-
-                setTimeout(() => {
-                    notif.classList.remove("show");
-                }, 3000);
-            }
         }
 
-        // ← ADD THIS LINE
-        submitForm(); // call the function so listeners attach
+        submitForm();
     </script>
+
     <script>
         const startBtn = document.getElementById("startBtn");
         const backBtn = document.getElementById("backBtn");
@@ -1709,11 +1432,8 @@
         const music = document.getElementById("bgMusic");
 
         startBtn.addEventListener("click", async () => {
-
-            // fade out hero
             hero.classList.add("fade-out");
 
-            // fade in music slowly
             music.volume = 0;
             await music.play();
 
@@ -1725,7 +1445,6 @@
                 }
             }, 100);
 
-            // tunggu hero animation siap
             setTimeout(() => {
                 hero.style.display = "none";
                 mainContent.style.display = "block";
@@ -1734,33 +1453,28 @@
                     mainContent.classList.add("show");
                 }, 50);
 
-
             }, 1000);
-
         });
 
-        backBtn.addEventListener("click", () => {
+        // FIX: null check for backBtn since it's commented out in HTML
+        if (backBtn) {
+            backBtn.addEventListener("click", () => {
+                music.pause();
+                music.currentTime = 0;
+                music.volume = 1;
 
-            // Stop music
-            music.pause();
-            music.currentTime = 0;
-            music.volume = 1;
+                mainContent.classList.remove("show");
+                mainContent.style.display = "none";
 
-            // Hide main content
-            mainContent.classList.remove("show");
-            mainContent.style.display = "none";
+                hero.style.display = "flex";
+                hero.classList.remove("fade-out");
 
-            // Reset hero
-            hero.style.display = "flex";
-            hero.classList.remove("fade-out");
-
-            // Scroll to top
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
             });
-
-        });
+        }
     </script>
 
     <script>
@@ -1789,10 +1503,6 @@
             sparkleCtx.clearRect(0, 0, sparkleCanvas.width, sparkleCanvas.height);
 
             sparks.forEach(s => {
-                // sparkleCtx.beginPath();
-                // sparkleCtx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
-                // sparkleCtx.fillStyle = `rgba(255,255,255,${s.alpha})`;
-                // sparkleCtx.fill();
                 sparkleCtx.globalAlpha = s.alpha;
                 sparkleCtx.drawImage(sparkleImg, s.x, s.y, 10, 10);
                 sparkleCtx.globalAlpha = 1;
@@ -1824,18 +1534,17 @@
             const text = document.getElementById("popup-text");
             const popupContent = document.querySelector(".popup-content");
 
-
             if (type === "memory") {
                 text.innerHTML = `
 <span class="letter-title">To My Baby 💌</span>
 <span class="letter-sub">A letter from my heart, just for you</span>
 
-Hi farhanah. I think I’ve been hold thing for so long. I think this is last I will tell everything what I felt about us okay baby. Berapa banyak kali last dh ni ngahahah.
+Hi farhanah. I think I've been hold thing for so long. I think this is last I will tell everything what I felt about us okay baby. Berapa banyak kali last dh ni ngahahah.
 
 I want you to know baby. No one will understand how happy I am when you came back to me. 
 No one will understand the feeling when we got to be together again. I am so happy. 
 I never thought this thing was gonna happen. It feels impossible. 
-I couldn’t see any path that would lead us back to each other. But you make it happen. The moment you trying to approach me again even after a years, so many thing i’ve been thinking of. “Why should you came back?”, ”who ask you to came back?”, ”what makes you thinking to came back to me?!”, “what you consider for coming back??” (can you answer it for me please:) I dont know im just confuse and curious. At first I doesnt feel anything. Bcs I already said that I have move forward from us. But when im decided to call you, and the moment I heard your voice, oh myyyy. Its really been so long to not hear the voice that I miss so muchhh. I really mean it. How can I not be happy. You’re the one people call their fav ex. You’re the one I keep thinking about when im trying to be with someone else. You’re the one that I couldnt move on from for more than a couple of years. You’re the one being mentioned in my English essay in SPM lol. The moment you left me, no one will understand that feeling, that heartbreak. That feeling of being abandoned and betrayed. I don’t think I’m strong enough to see you with someone else. When I thought that I could never lose you no matter what happened, I was wrong. I learned a lot of lessons from it. It is the same person that made me feel one of the most both happiest and saddest moment in life. It is you. The one that I had already set in my heart and want her to be my endgame. To be my last. To be my forever. No other than you. You’ll be always be my love besides my family. You will never know and understand how important you are and how much you’ve affected to me back then.
+I couldn't see any path that would lead us back to each other. But you make it happen. The moment you trying to approach me again even after a years, so many thing i've been thinking of. "Why should you came back?", "who ask you to came back?", "what makes you thinking to came back to me?!", "what you consider for coming back??" (can you answer it for me please:) I dont know im just confuse and curious. At first I doesnt feel anything. Bcs I already said that I have move forward from us. But when im decided to call you, and the moment I heard your voice, oh myyyy. Its really been so long to not hear the voice that I miss so muchhh. I really mean it. How can I not be happy. You're the one people call their fav ex. You're the one I keep thinking about when im trying to be with someone else. You're the one that I couldnt move on from for more than a couple of years. You're the one being mentioned in my English essay in SPM lol. The moment you left me, no one will understand that feeling, that heartbreak. That feeling of being abandoned and betrayed. I don't think I'm strong enough to see you with someone else. When I thought that I could never lose you no matter what happened, I was wrong. I learned a lot of lessons from it. It is the same person that made me feel one of the most both happiest and saddest moment in life. It is you. The one that I had already set in my heart and want her to be my endgame. To be my last. To be my forever. No other than you. You'll be always be my love besides my family. You will never know and understand how important you are and how much you've affected to me back then.
 
 Saya sayang awak baby. With my whole heart. Saya takkan berganjak sedikit pun dari awak. 
 I already in love with you for whoever you are. Im so in love with Farhanah in any condition and situation. 
@@ -1845,7 +1554,8 @@ I am sorry i cant be the one who besides you at your worst. I am sorry that i ca
 I am sorry for not loving you in a way i should. Nak tahu tak sebenarnya selepas yang kita keluar berbuka tu, saya cuba untuk follow je macam mana awak nak hubungan ni berjalan. Saya dh cuba taknak jealous. Saya dh cuba taknak kacau awak kalau awak busy. Saya dh cuba ikut rentak awak. And saya okay je. If this is the way you want to be loved, and if this is the only way that will make you stay with me. Saya akan buat. Apa cara pun. Even though sometimes it hurts me a lot. Kekadang sedih, overthinking, bosan. But if it is for you. If this is the mature relationship you meant, i would do it. Kadang2, saya sangat berharap yang kita dapat jadi macam kita yang dulu. Sangat2 care dengan satu sama lain. Sangat mengutamakan masing2 dulu lebih dari orang lain kat sekeliling. Menjadi keutamaan seseorang tu sangat lah best dan rasa special. Tapi yah, tu dulu la tapi. Kita yang dulu. Kalau awak rasa saya bukan priority awak, please, please, please, please, please, please dan please, cari orang lain yang awak rasa awak boleh jadikan dia priority. Saya bukan suruh awak pergi but, what kind of love is this, kalau tiada sedikit pun intention untuk atleast prihatin and perhatian for the one who you actually loved. Sorry. Saya bukan nak halau awak. Dan saya bukan suruh awak cari orang lain. Saya memang taknak awak pergi pun. Saya just nak yang terbaik untuk awak. Terbaik untuk kita. If it wasnt you, i would run. I try to fix this only because of you. Saya cuba untuk memperbetulkan apa yang patut dibetulkan. Betulkan apa kesilapan yang sama jadi three years ago. Sebelum kita boleh bergerak for the next phase awak. Saya taknak bila kita gerak makin kedepan but deep down each other still have something that cannot say and just keep it alone. I dont want it at all. I want you to tell me everything that you can without feel being judge. Saya nak tengok awak happy kalaupun awak happy tu dengan orang lain. Awak nak tahu tak. Everything that makes you happy will make me happy too. Lagi2 kalau awak sedih. Saya pun akan sedih jugak. Hihiks. 
 Btw, tq sebab buat saya continue janji saya. Okay la tuje. Happy birthday baby princess cinta sayaa🤏🏼
 <span class="letter-end">— Yours, always 🤍</span>
-`; popupContent.style.backgroundImage = "url('asset/bg.jpg')";
+`;
+                popupContent.style.backgroundImage = "url('asset/bg.jpg')";
             }
 
             if (type === "secret") {
@@ -1865,25 +1575,23 @@ Btw, tq sebab buat saya continue janji saya. Okay la tuje. Happy birthday baby p
 
             popup.style.display = "flex";
         }
-        // tutup popup
+
         function closePopup() {
             const popup = document.getElementById("popup");
             popup.style.display = "none";
-            // reset background
             document.body.style.background = "linear-gradient(135deg, #ff7ea3, #fff0f7)";
         }
 
-        // tutup bila klik overlay
         const popup = document.getElementById("popup");
         popup.addEventListener("click", (e) => {
-            if (e.target === popup) { // hanya kalau klik overlay, bukan content
+            if (e.target === popup) {
                 closePopup();
             }
         });
     </script>
 
     <script>
-        // Intersection Observer untuk kesan "Reveal on Scroll"
+        // Intersection Observer for reveal on scroll
         const observerOptions = {
             threshold: 0.1
         };
@@ -1897,7 +1605,6 @@ Btw, tq sebab buat saya continue janji saya. Okay la tuje. Happy birthday baby p
             });
         }, observerOptions);
 
-        // Apply ke semua section
         document.querySelectorAll('section').forEach(section => {
             section.style.opacity = "0";
             section.style.transform = "translateY(30px)";
@@ -1936,7 +1643,6 @@ Btw, tq sebab buat saya continue janji saya. Okay la tuje. Happy birthday baby p
             document.getElementById("tncPopup").style.display = "flex";
         }
 
-        /* close if click outside */
         document.getElementById("giftOptionPopup").addEventListener("click", (e) => {
             if (e.target.id === "giftOptionPopup") {
                 closeGiftOptionPopup();
@@ -1954,8 +1660,7 @@ Btw, tq sebab buat saya continue janji saya. Okay la tuje. Happy birthday baby p
         }
 
         async function submitDating(plan) {
-
-            const { error } = await supabase
+            const { error } = await window.supabase
                 .from("submissions")
                 .insert([{
                     warna: `Dating Plan Request: ${plan}`
@@ -1969,14 +1674,15 @@ Btw, tq sebab buat saya continue janji saya. Okay la tuje. Happy birthday baby p
             }
         }
 
-        /* close outside click */
         document.getElementById("datingPopup").addEventListener("click", (e) => {
             if (e.target.id === "datingPopup") {
                 closeDatingPopup();
             }
         });
     </script>
+
     <script>
+        // Slider drag to scroll
         const slider = document.querySelector(".slider-wrapper");
 
         let isDown = false;
@@ -2002,11 +1708,9 @@ Btw, tq sebab buat saya continue janji saya. Okay la tuje. Happy birthday baby p
 
         slider.addEventListener("mousemove", (e) => {
             if (!isDown) return;
-
             e.preventDefault();
             const x = e.pageX - slider.offsetLeft;
             const walk = (x - startX) * 2;
-
             slider.scrollLeft = scrollLeft - walk;
         });
     </script>
